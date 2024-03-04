@@ -1,6 +1,8 @@
-btn = document.getElementById("btn");
-btn.addEventListener("click", foo);
+window.onload = (event) => {
+  let btn = document.getElementById("btn");
+  btn.addEventListener("click", foo);
 
-function foo() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
+  function foo() {
+    alert("hello world");
+  }
+};
