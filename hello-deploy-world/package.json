@@ -1,6 +1,6 @@
 {
   "name": "hello-deploy-world",
-  "homepage": "https://joaquincodigo.github.io/portfolio/hellodeployworld",
+  "homepage": "https://joaquincodigo.github.io/hello-deploy-world",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
