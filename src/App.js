@@ -1,9 +1,9 @@
 import './App.css';
-import ProfilePhoto from './ProfilePhoto/ProfilePhoto'
+import ProfilePhoto from './Components/ProfilePhoto'
+
 function App() {
   return (
-    <div className="App">
-      <img alt="hello" src="/images/ProfilePhoto.png" />
+    <div className="App container-fluid">
       <ProfilePhoto />
     </div>
   );
