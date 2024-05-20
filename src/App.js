@@ -10,7 +10,9 @@ import ButtonContact from './Components/ButtonContact';
 import ButtonLanguage from './Components/ButtonLanguage';
 import ButtonTheme from './Components/ButtonTheme';
 import ButtonResume from './Components/ButtonResume';
-import ProjectEntry from './Components/ProjectEntry';
+import ProjectJap from './Components/ProjectJap';
+import ProjectPokemon from './Components/ProjectPokemon';
+import TopBar from './Components/TopBar';
 
 function App() {
 
@@ -18,13 +20,16 @@ function App() {
     <LanguageProvider>
       <ThemeProvider>
         <div className="App container-fluid">
-          <ButtonLanguage />
-          <ButtonTheme />
+          <TopBar>
+            <ButtonLanguage />
+            <ButtonTheme />
+          </TopBar>
           <ProfilePhoto />
           <PresentationText />
           <ButtonContact />
           <ButtonResume />
-          <ProjectEntry title="Im a Project!" text='Lorem ipsum etc etc etc etc etc etc etc' image="hello" />
+          <ProjectJap />
+          <ProjectPokemon />
         </div>
       </ThemeProvider>
     </LanguageProvider>

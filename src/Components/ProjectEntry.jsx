@@ -6,7 +6,8 @@ const ProjectEntry = ({ title, text, image }) => {
 		<div className='ProjectEntry'>
 			<h2>{title}</h2>
 			<p>{text}</p>
-			<img src="{image}" alt="Project Image" />
+			{/* <img src="{image}" alt="Project Image" /> */}
+			<p>{image}</p>
 		</div>
 	);
 };
