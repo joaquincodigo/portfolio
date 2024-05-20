@@ -21,8 +21,10 @@ function App() {
       <ThemeProvider>
         <div className="App container-fluid">
           <TopBar>
-            <ButtonLanguage />
-            <ButtonTheme />
+            <div className='bar-buttons-container'>
+              <ButtonLanguage />
+              <ButtonTheme />
+            </div>
           </TopBar>
           <ProfilePhoto />
           <PresentationText />

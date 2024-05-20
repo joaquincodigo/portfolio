@@ -5,8 +5,8 @@ const ButtonLanguage = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 
 	return (
-		<button onClick={toggleTheme}>
-			{theme === 'light' ? 'Switch to Dark' : 'Switch To Light'}
+		<button className="ButtonTheme btn btn-primary rounded-circle p-0" onClick={toggleTheme}>
+			<img src="/Images/US.svg" alt="US Icon" />
 		</button>
 	);
 };

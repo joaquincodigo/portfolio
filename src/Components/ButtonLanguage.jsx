@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import LanguageContext from './LanguageContext';
+import ThemeContext from './ThemeContext';
 
 const ButtonLanguage = () => {
 	const { language, toggleLanguage } = useContext(LanguageContext);
+	const { theme } = useContext(LanguageContext);
 
 	return (
-		<button onClick={toggleLanguage}>
-			{language === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
+		<button className="btn btn-primary rounded-circle" onClick={toggleLanguage}>
+			L
 		</button>
 	);
 };
