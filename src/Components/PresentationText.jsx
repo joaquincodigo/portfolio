@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import LanguageContext from './LanguageContext';
+import ThemeContext from './ThemeContext';
 
 const PresentationText = () => {
+
+	const { language } = useContext(LanguageContext);
+	const { theme } = useContext(ThemeContext);
+
+	const text = language === 'en' ?
+		"Explore my work and projects showcasing my skills and expertise in web development."
+		:
+		"Explora mi trabajo y proyectos que muestran mis habilidades y experiencia en desarrollo web."
+
 	return (
 		<div className='bg-secondary row'>
 
@@ -9,10 +20,16 @@ const PresentationText = () => {
 			</h1>
 
 			<p className='text-center fs-2 ibn-plex regular'>
-				Explore my work and projects showcasing my skills and expertise in web development.
+				{text}
 			</p>
 		</div>
 	);
 };
 
 export default PresentationText;
+
+
+
+
+
+

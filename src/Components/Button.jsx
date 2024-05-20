@@ -4,8 +4,8 @@ import React from 'react';
 const Button = ({ text, icon }) => {
 	return (
 		<div className='row'>
-			<button className='bt-primary'>
-				{text}
+			<button className='btn btn-info'>
+				<span>{icon}</span> {text}
 			</button>
 		</div>
 	);

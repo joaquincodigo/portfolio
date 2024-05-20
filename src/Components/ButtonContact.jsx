@@ -11,13 +11,13 @@ const ButtonContact = () => {
 	const { language } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
 
-	const text = language === 'en' ?
-		"HELLO ENGLISh"
-		:
-		"HOLA ESPANOl"
+	const text = language === 'en' ? "Contact Me" : "Contáctame"
 
 	return (
-		<Button text={text} />
+		<div className='ButtonContact'>
+			<Button text={text} icon="CON-ICON" />
+			<p>I have theme: {theme}</p>
+		</div>
 	);
 };
 
