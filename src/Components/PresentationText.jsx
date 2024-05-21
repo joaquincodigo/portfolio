@@ -13,7 +13,7 @@ const PresentationText = () => {
 		"Explora mi trabajo y proyectos que muestran mis habilidades y experiencia en desarrollo web."
 
 	return (
-		<div className='bg-secondary row'>
+		<div className='row'>
 
 			<h1 className='text-center fs-1 imb-plex-sans-bold'>
 				Portfolio

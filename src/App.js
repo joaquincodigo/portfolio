@@ -32,6 +32,11 @@ function App() {
           <ButtonResume />
           <ProjectJap />
           <ProjectPokemon />
+          <ProjectPokemon />
+          <ProjectPokemon />
+          <ProjectPokemon />
+          <ProjectPokemon />
+          <ProjectPokemon />
         </div>
       </ThemeProvider>
     </LanguageProvider>

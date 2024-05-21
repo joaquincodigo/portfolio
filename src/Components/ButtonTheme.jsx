@@ -2,33 +2,19 @@ import React, { useContext } from 'react';
 import ThemeContext from './ThemeContext';
 import LanguageContext from './LanguageContext'
 
-const ButtonLanguage = () => {
+const ButtonTheme = () => {
 	const { theme, toggleTheme } = useContext(ThemeContext);
 	const { language } = useContext(LanguageContext);
 
-	let icon;
-	if (language === 'en') {
-		if (theme === 'light') {
-			const icon = "/images/ES Black Icon.svg"
-		}
-		else {
-			const icon = "/images/ES White Icon.svg"
-		}
-	}
-	else {
-		if (theme === 'light') {
-			const icon = "/images/EN Black Icon.svg"
-		}
-		else {
-			const icon = "/images/EN White Icon.svg"
-		}
-	}
+	const darkThemeIcon = "/images/Black Dark Theme Icon.svg"
+	const lightThemeIcon = "/images/White Light Theme Icon.svg"
+	const currentIcon = theme === 'light' ? darkThemeIcon : lightThemeIcon
 
 	return (
-		<button className="ButtonTheme btn btn-primary rounded-circle p-0" onClick={toggleTheme}>
-			<img src={icon} alt="Language Icon" />
+		<button className="ButtonTheme btn p-0" onClick={toggleTheme}>
+			<img src={currentIcon} alt="Theme Icon" />
 		</button>
 	);
 };
 
-export default ButtonLanguage;
+export default ButtonTheme;
