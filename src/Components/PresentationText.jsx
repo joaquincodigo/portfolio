@@ -19,7 +19,7 @@ const PresentationText = () => {
 				Portfolio
 			</h1>
 
-			<p className='text-center fs-2 ibn-plex regular'>
+			<p className='text-center fs-2 ibn-plex regular col-11 mx-auto'>
 				{text}
 			</p>
 		</div>

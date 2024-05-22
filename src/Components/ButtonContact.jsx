@@ -14,9 +14,8 @@ const ButtonContact = () => {
 	const text = language === 'en' ? "Contact Me" : "Contáctame"
 
 	return (
-		<div className='ButtonContact'>
+		<div className='ButtonContact mt-2'>
 			<Button text={text} icon="CON-ICON" />
-			<p>I have theme: {theme}</p>
 		</div>
 	);
 };

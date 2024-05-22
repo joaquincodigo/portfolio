@@ -14,9 +14,8 @@ const ButtonResume = () => {
 	const text = language === 'en' ? "Download my Resume" : "Descarga mi CV"
 
 	return (
-		<div className='ButtonResume'>
+		<div className='ButtonResume mb-5'>
 			<Button text={text} icon="CV-ICON" />
-			<p>I have theme: {theme}</p>
 		</div>
 	);
 };

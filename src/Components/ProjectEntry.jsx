@@ -4,9 +4,9 @@ const ProjectEntry = ({ title, text, image }) => {
 
 	return (
 		<div className='ProjectEntry'>
-			<h2>{title}</h2>
-			<p>{text}</p>
-			{/* <img src="{image}" alt="Project Image" /> */}
+			<h3 className='mb-4'>{title}</h3>
+			<p className='mb-3'>{text}</p>
+			{/* <img src="{image}" alt="Project Preview" /> */}
 			<p>{image}</p>
 		</div>
 	);
