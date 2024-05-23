@@ -6,11 +6,13 @@ const TopBar = ({ children }) => {
 	const { theme } = useContext(ThemeContext);
 
 	return (
-		<nav class="TopBar navbar navbar-light sticky-top bg-light p-2 w-100">
-			<a class="navbar-brand" href="#">
-				Joaquin.Codigo
-			</a>
-			{children}
+		<nav class="navbar fixed-top navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					Joaquin.Codigo
+				</a>
+				{children}
+			</div>
 		</nav>
 	);
 
