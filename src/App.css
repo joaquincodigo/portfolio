@@ -10,7 +10,7 @@
 .btn-light {
 	background-color: #0f62fe !important;
 	color: white !important;
-	border: none;
+	border: none !important;
 }
 
 .btn-dark {

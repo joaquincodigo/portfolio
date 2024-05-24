@@ -11,8 +11,8 @@ const ProjectJap = () => {
 	const { language } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
 
-	const title = language === 'en' ? "JAP TITLE" : "TITULO DE JAP"
-	const text = language === 'en' ? "JAP Text blablabla." : "Texto de JAP blablabla."
+	const title = language === 'en' ? "eComerce Site" : "Sitio eComerce"
+	const text = language === 'en' ? "A 7 weeks project using only vanilla HTML, JS and CSS" : "Texto de JAP blablabla."
 	const image = "an image goes here"
 
 	return (

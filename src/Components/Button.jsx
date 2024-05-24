@@ -17,8 +17,6 @@ const Button = ({ text, icon }) => {
 						alt="Contact"
 						className='img-fluid me-3'
 						style={{ maxWidth: '15%', height: 'auto' }}
-
-
 					/>
 					<span className='ibm-plex-sans-semibold me-3'>{text}</span>
 				</div>
