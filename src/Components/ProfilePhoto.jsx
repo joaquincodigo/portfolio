@@ -9,6 +9,7 @@ const ProfilePhoto = () => {
 					col-4
 					col-sm-4
 					mx-auto
+					mt-5
 					"
 				src="/images/ProfilePhoto.png"
 				alt="Profile"

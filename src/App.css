@@ -1,0 +1,20 @@
+.light {
+	color: #001141;
+}
+
+.dark {
+	background-color: #001141;
+	color: white;
+}
+
+.btn-light {
+	background-color: #0f62fe !important;
+	color: white !important;
+	border: none;
+}
+
+.btn-dark {
+	background-color: red !important;
+	color: white !important;
+	border: none !important;
+}

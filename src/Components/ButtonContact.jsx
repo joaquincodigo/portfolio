@@ -15,7 +15,7 @@ const ButtonContact = () => {
 
 	return (
 		<div className='ButtonContact mt-2'>
-			<Button text={text} icon="CON-ICON" />
+			<Button className="btn-light" text={text} icon="CON-ICON" />
 		</div>
 	);
 };
