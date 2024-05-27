@@ -13,7 +13,12 @@ const PresentationText = () => {
 		"Explora mis proyectos web que muestran habilidades y experiencia."
 
 	return (
-		<div className='row'>
+		<div
+			className='row'
+			style={{
+				color: theme === 'dark' ? '#ffffff' : '#001141'
+			}}
+		>
 
 			<h1 className='mt-1 mb-2 text-center fs-1 imb-plex-sans-bold'>
 				Portfolio

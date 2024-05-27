@@ -7,7 +7,6 @@ const MainContainer = ({ children }) => {
 
 	const styles = {
 		backgroundColor: theme === 'dark' ? '#001141' : '#ffffff',
-		color: theme === 'dark' ? '#ffffff' : '#001141',
 	};
 
 	return (
