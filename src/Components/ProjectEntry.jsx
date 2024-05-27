@@ -5,7 +5,7 @@ const ProjectEntry = ({ title, text, image }) => {
 	const dummyImage = '/images/dummyProjectImage.png'
 
 	return (
-		<div className='ProjectEntry mb-4 p-3 rounded'>
+		<div className='ProjectEntry mb-4 p-3 rounded-4 ' style={{ backgroundColor: '#d9fbfb' }}>
 
 			{/* // TITLE */}
 			<h3 className='mb-3 fs-2'>{title}</h3>
@@ -16,6 +16,18 @@ const ProjectEntry = ({ title, text, image }) => {
 			{/* // IMAGE */}
 			{/* <img className="mb-5" src="{image}" alt="Project Preview" /> */}
 			<img className="mb-2 col-12 rounded" src={dummyImage} alt="Project Preview" />
+
+			{/* // BUTTON */}
+			<button
+				className='btn rounded-pill col-6 offset-6 mt-3 mb-2 fs-4'
+				style={{
+					backgroundColor: '#0f62fe',
+					color: '#ffffff'
+				}}
+			>
+				Try It
+			</button>
+
 
 		</div>
 	);

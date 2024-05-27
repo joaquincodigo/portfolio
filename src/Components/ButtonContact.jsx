@@ -15,7 +15,7 @@ const ButtonContact = () => {
 	const contactIcon = '/images/ContactIconWhite.svg'
 
 	return (
-		<div className='ButtonContact mt-2 mb-2'>
+		<div className='ButtonContact mb-2'>
 			<Button className="btn-light" text={text} icon={contactIcon} />
 		</div>
 	);
