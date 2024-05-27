@@ -13,7 +13,7 @@ const Button = ({ text, icon }) => {
 		<div className='row'>
 			<button
 				className='btn btn-lg rounded-pill col-10 mx-auto mb-3'
-				style={{ backgroundColor: theme === 'light' ? '#0043ce' : '#82cfff' }}
+				style={{ backgroundColor: theme === 'light' ? '#001141' : '#0043ce' }}
 			>
 				<div className="container mx-auto d-flex align-items-center justify-content-center">
 
@@ -25,7 +25,7 @@ const Button = ({ text, icon }) => {
 
 					<span
 						className='ibm-plex-sans-semibold me-3 fs-4'
-						style={{ color: theme === 'light' ? '#ffffff' : '#001141' }}
+						style={{ color: theme === 'light' ? '#ffffff' : '#ffffff' }}
 					>
 						{text}
 					</span>

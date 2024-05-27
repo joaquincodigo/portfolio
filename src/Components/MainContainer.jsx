@@ -6,7 +6,7 @@ const MainContainer = ({ children }) => {
 	const { theme } = useContext(ThemeContext);
 
 	const styles = {
-		backgroundColor: theme === 'dark' ? '#001141' : '#ffffff',
+		backgroundColor: theme === 'dark' ? '#001141' : '#f2f4f8',
 	};
 
 	return (

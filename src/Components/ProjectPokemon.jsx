@@ -18,7 +18,7 @@ const ProjectPokemon = () => {
 		:
 		"Explora y filtra entre los 151 Pokémon originales para encontrar tu favorito!"
 
-	const image = "an image goes here"
+	const image = "images/PokemonProjectPhoto.bmp"
 
 	return (
 		<div className='ProjectJap'>
