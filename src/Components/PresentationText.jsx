@@ -8,18 +8,18 @@ const PresentationText = () => {
 	const { theme } = useContext(ThemeContext);
 
 	const text = language === 'en' ?
-		"Explore my work and projects showcasing my skills and expertise in web development."
+		"Explore my web projects demonstrating skills and expertise."
 		:
-		"Explora mi trabajo y proyectos que muestran mis habilidades y experiencia en desarrollo web."
+		"Explora mis proyectos web que muestran habilidades y experiencia."
 
 	return (
 		<div className='row'>
 
-			<h1 className='text-center fs-1 imb-plex-sans-bold'>
+			<h1 className='mt-1 mb-2 text-center fs-1 imb-plex-sans-bold'>
 				Portfolio
 			</h1>
 
-			<p className='text-center fs-2 ibn-plex regular col-11 mx-auto'>
+			<p className='text-center mb-5 fs-2 ibn-plex regular col-11 mx-auto'>
 				{text}
 			</p>
 		</div>

@@ -11,7 +11,7 @@ const ButtonResume = () => {
 	const { language } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
 	const resumeIcon = '/images/ResumeIconWhite.svg'
-	const text = language === 'en' ? "Download my Resume" : "Descarga mi CV"
+	const text = language === 'en' ? "Download my CV" : "Descarga mi CV"
 
 	return (
 		<div className='ButtonResume mb-5'>

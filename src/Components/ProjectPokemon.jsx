@@ -11,8 +11,13 @@ const ProjectPokemon = () => {
 	const { language } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
 
-	const title = language === 'en' ? "POKEMON TITLE" : "TITULO DE POKEMON"
-	const text = language === 'en' ? "POKEMON Text blablabla." : "Texto de POKEMON blablabla."
+	const title = language === 'en' ? "Pokémon Search" : "Búsqueda Pokémon"
+
+	const text = language === 'en' ?
+		"Explore and filter through the original 151 Pokémon to find your favorite!"
+		:
+		"Explora y filtra entre los 151 Pokémon originales para encontrar tu favorito!"
+
 	const image = "an image goes here"
 
 	return (
