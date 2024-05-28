@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 import ThemeContext from './ThemeContext';
 import LanguageContext from './LanguageContext';
 
-const ProjectEntry = ({ title, text, image }) => {
+const ProjectEntry = ({ title, text, image, link }) => {
 	const dummyImage = '/images/dummyProjectImage.png';
 	const { theme } = useContext(ThemeContext);
 	const { language } = useContext(LanguageContext);
+
+	const buttonText = language === 'en' ? 'See' : 'Ver'
 
 	return (
 		<div
@@ -25,15 +27,18 @@ const ProjectEntry = ({ title, text, image }) => {
 			< img className="mb-2 col-12 rounded" src={image} alt="Project Preview" />
 
 			{/* BUTTON */}
-			< button
-				className='btn rounded-pill col-6 offset-6 mt-3 mb-2 fs-4 ibm-plex-sans-semibold'
-				style={{
-					backgroundColor: theme === 'light' ? '#001141' : '#9ef0f0',
-					color: theme === 'light' ? '#ffffff' : '#ffffff',
-				}}
-			>
-				Try It
-			</button >
+			<a href={link} target="_blank" rel="noopener noreferrer">
+				<button
+					className='btn rounded-pill col-5 offset-7 mt-3 mb-2 fs-4 ibm-plex-sans-semibold'
+					style={{
+						backgroundColor: theme === 'light' ? '#001d6c' : '#9ef0f0',
+						color: theme === 'light' ? '#ffffff' : '#ffffff',
+					}}
+				>
+					{buttonText}
+				</button>
+			</a>
+
 		</div >
 	);
 };

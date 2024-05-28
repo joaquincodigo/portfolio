@@ -11,13 +11,17 @@ const ProjectJap = () => {
 	const { language } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
 
-	const title = language === 'en' ? "eComerce Site" : "Sitio eComerce"
-	const text = language === 'en' ? "A 7 weeks project using only vanilla HTML, JS and CSS" : "Texto de JAP blablabla."
-	const image = "an image goes here"
+	const title = language === 'en' ? "JAP eComerce Site" : "JAP Sitio eComerce"
+	const text = language === 'en' ?
+		"This project is part of my first year in Jóvenes a Programar. I designed and developed an e-commerce website inspired by MercadoLibre, using JavaScript, HTML, and CSS. Every section, CSS style, and logic were implemented entirely from scratch."
+		:
+		"Este proyecto forma parte de mi primer año en 'Jóvenes a Programar'. Diseñé y desarrollé un sitio de comercio inspirado en MercadoLibre, utilizando JavaScript, HTML y CSS puro. Cada sección, estilo CSS y lógica fueron implementados completamente desde cero."
+	const image = "images/JapProjectPhoto.bmp"
+	const link = "https://ripnephils.github.io/JoaquinOrtiz/"
 
 	return (
 		<div className='ProjectJap'>
-			<ProjectEntry title={title} text={text} image={image} />
+			<ProjectEntry title={title} text={text} image={image} link={link} />
 		</div>
 	);
 };

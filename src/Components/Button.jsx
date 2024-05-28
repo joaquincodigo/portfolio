@@ -13,7 +13,7 @@ const Button = ({ text, icon }) => {
 		<div className='row'>
 			<button
 				className='btn btn-lg rounded-pill col-10 mx-auto mb-3'
-				style={{ backgroundColor: theme === 'light' ? '#001141' : '#0043ce' }}
+				style={{ backgroundColor: theme === 'light' ? '#001d6c' : '#0043ce' }}
 			>
 				<div className="container mx-auto d-flex align-items-center justify-content-center">
 
