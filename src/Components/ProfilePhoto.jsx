@@ -6,7 +6,11 @@ const ProfilePhoto = () => {
 			<img
 				className="
 					rounded-circle
-					col-4
+					col-4 
+					col-md-2
+					col-lg-2
+					col-xl-1
+					d-block
 					mx-auto
 					mt-5
 					p-0

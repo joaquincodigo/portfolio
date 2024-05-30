@@ -7,12 +7,10 @@ const Button = ({ text, icon }) => {
 
 	const { theme } = useContext(ThemeContext)
 
-	const buttonTheme = theme === 'light' ? 'btn-light' : 'btn-dark'
-
 	return (
 		<div className='row'>
 			<button
-				className='btn btn-lg rounded-pill col-10 mx-auto mb-3'
+				className='btn btn-lg rounded-pill col-10 col-md-6 col-lg-3 col-xl-3 mx-auto mb-3'
 				style={{ backgroundColor: theme === 'light' ? '#001d6c' : '#0043ce' }}
 			>
 				<div className="container mx-auto d-flex align-items-center justify-content-center">

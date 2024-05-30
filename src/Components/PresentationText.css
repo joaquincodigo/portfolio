@@ -1,0 +1,23 @@
+@media (min-width: 576px) {
+
+	/* SM */
+	.portfolio-heading {
+		background-color: red;
+	}
+}
+
+@media (min-width: 768px) {
+	/* MD */
+}
+
+@media (min-width: 992px) {
+	/* LG */
+}
+
+@media (min-width: 1200px) {
+	/* XL */
+}
+
+@media (min-width: 1400px) {
+	/* XXL */
+}

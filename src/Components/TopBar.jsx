@@ -12,7 +12,7 @@ const TopBar = ({ children }) => {
 			}}
 		>
 			<div
-				className="container-fluid d-flex align-items-center pt-2 pb-2"
+				className="container-fluid d-flex align-items-center pt-2 pb-2 pt-lg-1 pb-lg-1"
 				style={{
 					boxShadow: theme === 'dark' ? '0px 0.9px 2px #d0e2ff' : '0px 0.2px 2px #001141'
 				}}
