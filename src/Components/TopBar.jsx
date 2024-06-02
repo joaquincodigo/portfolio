@@ -5,10 +5,10 @@ const TopBar = ({ children }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <nav className="TopBar fixed top-0 left-0 w-full flex justify-between px-3 pt-1 bg-green-500">
+    <nav className="TopBar shadow bg-slate-100 fixed top-0 left-0 w-full flex justify-between px-3 pt-2 pb-1.5">
       <div className="">
-        <p className="text-md">
-          joaquín <span className="font-bold">.código</span>
+        <p className="text-lg">
+          joaquín<span className="font-bold">.código</span>
         </p>
       </div>
 

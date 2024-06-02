@@ -12,12 +12,12 @@ const PresentationText = () => {
       : "Explora mis proyectos web que muestran habilidades y experiencia.";
 
   return (
-    <div className="">
+    <div className="PresentationText mb-9">
       <div className="">
-        <h1 className="">Portfolio</h1>
+        <h1 className="text-3xl font-bold text-center mt-5 mb-2">Portfolio</h1>
       </div>
 
-      <p className="">{text}</p>
+      <p className="text-center text-2xl mx-3">{text}</p>
     </div>
   );
 };

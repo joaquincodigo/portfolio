@@ -8,7 +8,7 @@ const ButtonResume = () => {
   const text = language === "en" ? "Download my CV" : "Descarga mi CV";
 
   return (
-    <div className="">
+    <div className="ResumeButton mb-9">
       <Button text={text} icon={resumeIcon} />
     </div>
   );

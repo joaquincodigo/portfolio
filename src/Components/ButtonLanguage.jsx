@@ -28,7 +28,7 @@ const ButtonLanguage = () => {
   }
 
   return (
-    <button className="" onClick={toggleLanguage}>
+    <button className="ButtonLanguage me-2" onClick={toggleLanguage}>
       <img src={currentIcon} alt="language icon" />
     </button>
   );

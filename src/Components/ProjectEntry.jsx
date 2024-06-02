@@ -10,16 +10,23 @@ const ProjectEntry = ({ title, text, image, link }) => {
   const buttonText = language === "en" ? "See" : "Ver";
 
   return (
-    <div className="">
-      <h3 className=""> {title}</h3>
+    <div className="ProjectEntry shadow-md rounded-3xl p-6 bg-white mb-6">
+      {/* TITLE */}
+      <h3 className=" text-2xl font-bold mb-6">{title}</h3>
 
-      <p className=""> {text}</p>
+      {/* TEXT */}
+      <p className="text-xl mb-6">{text}</p>
 
-      <img className="" src={image} alt="Project Preview" />
+      {/* IMAGE */}
+      <img className="rounded-md mb-6" src={image} alt="Project Preview" />
 
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <button className="">{buttonText}</button>
-      </a>
+      <div className="flex justify-end">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <button className="bg-blue-900 font-semibold text-white rounded-full w-36 h-12 text-lg ">
+            {buttonText}
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
