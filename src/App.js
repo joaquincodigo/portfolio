@@ -15,7 +15,7 @@ import TopBar from "./Components/TopBar";
 
 function App() {
   return (
-    <div className="App font-ibm-plex-sans px-3 pt-20 bg-blue-50">
+    <div className="App font-ibm-plex-sans px-3 pt-20 bg-white dark:bg-blue-100">
       <LanguageProvider>
         <ThemeProvider>
           <TopBar>
