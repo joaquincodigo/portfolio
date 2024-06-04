@@ -19,7 +19,7 @@ function App() {
       <LanguageProvider>
         <ThemeProvider>
           <TopBar>
-            <div className="bar-buttons-container">
+            <div className="bar-buttons-container flex items-center">
               <ButtonLanguage />
               <ButtonTheme />
             </div>

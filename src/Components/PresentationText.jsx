@@ -14,10 +14,14 @@ const PresentationText = () => {
   return (
     <div className="PresentationText mb-9 w-full">
       <div className="">
-        <h1 className="text-3xl font-bold text-center mt-5 mb-2">Portfolio</h1>
+        <h1 className="text-3xl font-bold text-center mt-5 mb-2 text-blue-80 dark:text-white">
+          Portfolio
+        </h1>
       </div>
 
-      <p className="text-center text-2xl mx-3">{text}</p>
+      <p className="text-center text-2xl mx-3 text-blue-90 dark:text-white">
+        {text}
+      </p>
     </div>
   );
 };

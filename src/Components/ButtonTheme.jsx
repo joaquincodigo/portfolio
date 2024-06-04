@@ -9,7 +9,10 @@ const ButtonTheme = () => {
   const currentIcon = theme === "light" ? darkThemeIcon : lightThemeIcon;
 
   return (
-    <button className="" onClick={toggleTheme}>
+    <button
+      className="hover:bg-cool-gray-20 hover:rounded-full"
+      onClick={toggleTheme}
+    >
       <img src={currentIcon} alt="Theme Icon" />
     </button>
   );
