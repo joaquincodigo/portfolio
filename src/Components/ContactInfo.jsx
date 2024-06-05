@@ -9,20 +9,20 @@ const ContactInfo = ({ isContactInfoHidden }) => {
 
   return (
     <div
-      className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 text-xl bg-white`}
+      className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-6 text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
     >
       <ul>
-        <li>
-          <span className="font-bold mb-3">X</span> 098 577 384
+        <li className="mb-3">
+          <img src="/images/smartphone.png" alt="phone" /> 098 577 384
         </li>
-        <li>
-          <span className="font-bold mb-3">X</span> joaquin.codigo@gmail.com
+        <li className="mb-3">
+          <span className="">X</span> joaquin.codigo@gmail.com
         </li>
-        <li>
-          <span className="font-bold mb-3">X</span> linkedin/username
+        <li className="mb-3">
+          ><span className="">X</span> linkedin/username
         </li>
-        <li>
-          <span className="font-bold mb-3">X</span> github/username
+        <li className="mb-3">
+          <span className="">X</span> github/username
         </li>
       </ul>
     </div>

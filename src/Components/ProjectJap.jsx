@@ -9,7 +9,7 @@ const ProjectJap = () => {
   const { language } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
 
-  const image = "images/JapProjectPhoto.bmp";
+  const image = "images/JapProjectPhoto.gif";
   const link = "https://ripnephils.github.io/JoaquinOrtiz/";
   const title = language === "en" ? "JAP eComerce Site" : "JAP Sitio eComerce";
   const text =

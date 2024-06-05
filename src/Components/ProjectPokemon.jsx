@@ -16,8 +16,9 @@ const ProjectPokemon = () => {
       ? "Explore and filter through the original 151 Pokémon to find your favorite! This app was lovingly crafted with React, aiming to evoke a sense of nostalgia."
       : "¡Explora y filtra entre los 151 Pokémon originales para encontrar tu favorito! Esta aplicación fue creada con cariño usando React, con la intención de evocar un sentimiento de nostalgia.";
 
-  const image = "images/PokemonProjectPhoto.bmp";
+  const image = "images/PokemonProjectPhoto.gif";
   const link = "example.com";
+
   return (
     <div className="ProjectPokemon">
       <ProjectEntry title={title} text={text} image={image} link={link} />

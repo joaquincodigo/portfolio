@@ -6,7 +6,7 @@ const Button = ({ text, icon, onClick }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="w-full px-12">
+    <div className="w-full px-6">
       <button
         onClick={onClick}
         className="Button bg-blue-90 dark:bg-blue-70 rounded-full w-full block py-1.5 mb-3"

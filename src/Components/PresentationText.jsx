@@ -19,7 +19,7 @@ const PresentationText = () => {
         </h1>
       </div>
 
-      <p className="text-center text-2xl mx-3 text-blue-90 dark:text-white">
+      <p className="text-center text-2xl mx-6 text-blue-90 dark:text-white">
         {text}
       </p>
     </div>
