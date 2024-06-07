@@ -23,7 +23,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
       <ul>
         <li className="mb-3">
           <img
-            className="w-6 inline-block align-middle me-3"
+            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
@@ -31,7 +31,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li className="mb-3">
           <img
-            className="w-6 inline-block align-middle me-3"
+            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
             src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
             alt="mail"
           />
@@ -39,21 +39,21 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li className="mb-3">
           <img
-            className="w-6 inline-block align-middle me-3"
+            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
             src={
               theme === "dark" ? LINKEDIN_PALEBLUE_ICON : LINKEDIN_DARKBLUE_ICON
             }
             alt="linkedin"
           />
-          <span className="align-middle">linkedin/username</span>
+          <span className="align-middle">linkedin.com/in/joaquincodigo</span>
         </li>
         <li className="mb-3">
           <img
-            className="w-6 inline-block align-middle me-3"
+            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
             src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
             alt="github"
           />
-          <span className="align-middle">github/username</span>
+          <span className="align-middle">github.com/joaquincodigo</span>
         </li>
       </ul>
     </div>
