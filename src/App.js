@@ -29,18 +29,22 @@ function App() {
       <LanguageProvider>
         <ThemeProvider>
           <TopBar>
-            <div className="bar-buttons-container flex items-center">
+            <div className="flex items-center">
               <ButtonLanguage />
               <ButtonTheme />
             </div>
           </TopBar>
           <ProfilePhoto />
           <PresentationText />
-          <ButtonContact onClick={handleContactButtonClick} />
-          <ContactInfo isContactInfoHidden={isContactInfoHidden} />
-          <ButtonResume />
-          <ProjectJap />
-          <ProjectPokemon />
+          <div className="bg-red-300 flex flex-col md:flex-row md:space-x-4 md:justify-center">
+            <ButtonContact onClick={handleContactButtonClick} />
+            <ContactInfo isContactInfoHidden={isContactInfoHidden} />
+            <ButtonResume />
+          </div>
+          <div className="bg-green-600 flex flex-col md:flex-row md:flex-wrap">
+            <ProjectJap />
+            <ProjectPokemon />
+          </div>
         </ThemeProvider>
       </LanguageProvider>
     </div>

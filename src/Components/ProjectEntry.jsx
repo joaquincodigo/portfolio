@@ -10,7 +10,7 @@ const ProjectEntry = ({ title, text, image, link }) => {
   const buttonText = language === "en" ? "See" : "Ver";
 
   return (
-    <div className="ProjectEntry mb-6 p-6 rounded-3xl shadow-md shadow-blue-30 dark:shadow-none dark:border dark:border-blue-70 text-blue-100 dark:text-blue-10 bg-white dark:bg-blue-100">
+    <div className="ProjectEntry mb-6 p-6 rounded-3xl shadow-md shadow-blue-30 dark:shadow-none dark:border dark:border-blue-70 text-blue-100 dark:text-blue-10 bg-white dark:bg-blue-100 max-w-[463px] mx-auto">
       {/* TITLE */}
       <h3 className=" text-2xl font-bold mb-6">{title}</h3>
 

@@ -18,7 +18,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
 
   return (
     <div
-      className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-6 text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
+      className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-auto text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
     >
       <ul>
         <li className="mb-3">
