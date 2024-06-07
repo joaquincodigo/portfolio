@@ -36,12 +36,12 @@ function App() {
           </TopBar>
           <ProfilePhoto />
           <PresentationText />
-          <div className="bg-red-300 flex flex-col md:flex-row md:space-x-4 md:justify-center">
+          <div className="flex flex-col md:flex-row md:space-x-4 md:justify-center">
             <ButtonContact onClick={handleContactButtonClick} />
             <ContactInfo isContactInfoHidden={isContactInfoHidden} />
             <ButtonResume />
           </div>
-          <div className="bg-green-600 flex flex-col md:flex-row md:flex-wrap">
+          <div className="flex flex-col md:flex-row md:flex-wrap md:space-x-4 justify-center">
             <ProjectJap />
             <ProjectPokemon />
           </div>

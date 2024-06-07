@@ -1,0 +1,6 @@
+> Agrandar barra en MD y más
+> Ponerle circulo gris a los iconos de language y theme on :hover
+> Make JAP project entry text shorter.
+> Make Cards max and min height strict for regularity an aesthethics.
+> Get an icon or some symbol
+> Change for size for the intro text and heading
