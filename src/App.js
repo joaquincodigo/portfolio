@@ -36,11 +36,27 @@ function App() {
           </TopBar>
           <ProfilePhoto />
           <PresentationText />
-          <div className="flex flex-col md:flex-row md:space-x-4 md:justify-center">
+
+          {/* CONTACT INFO MOBILE LAYOUT */}
+          <div className="md:hidden flex flex-col md:flex-row md:space-x-4 md:justify-center">
             <ButtonContact onClick={handleContactButtonClick} />
             <ContactInfo isContactInfoHidden={isContactInfoHidden} />
             <ButtonResume />
           </div>
+          {/* --------------------------- */}
+
+          {/* CONTACT INFO DESKTOP LAYOUT */}
+          <div className="hidden md:flex flex-col mb-6">
+            <div className="hidden md:flex flex-col md:flex-row md:space-x-4 md:justify-center md:space-y-0">
+              <ButtonContact onClick={handleContactButtonClick} />
+              <ButtonResume />
+            </div>
+            <div className="mx-auto">
+              <ContactInfo isContactInfoHidden={isContactInfoHidden} />
+            </div>
+          </div>
+          {/* --------------------------- */}
+
           <div className="flex flex-col md:flex-row md:flex-wrap md:space-x-4 justify-center">
             <ProjectJap />
             <ProjectPokemon />

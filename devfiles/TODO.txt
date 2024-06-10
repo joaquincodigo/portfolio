@@ -1,6 +1,12 @@
+====================== TODO ========================
+> Make Cards max and min height strict for regularity an aesthethics.
+> Get an icon or some symbol for the navbar brand
+> Change for size for the intro text and heading
+> Corregir íconos de contact info para que queden todos similares. En lo posible usar algún editor y hacerlos a mano.
+> Implement tag list for project entries
+> Hacer que la contact info se despliegue hacia abajo en lugar de entre los botones en pantallas grandes.
+====================== DONE ========================
+> Make JAP project entry text shorter.
 > Agrandar barra en MD y más
 > Ponerle circulo gris a los iconos de language y theme on :hover
-> Make JAP project entry text shorter.
-> Make Cards max and min height strict for regularity an aesthethics.
-> Get an icon or some symbol
-> Change for size for the intro text and heading
+> Remove button from project antry, make the entire card a link

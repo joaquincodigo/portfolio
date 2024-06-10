@@ -16,45 +16,48 @@ const ContactInfo = ({ isContactInfoHidden }) => {
   const PHONE_DARKBLUE_ICON = "/images/contactIcons/phone_darkblue.svg";
   const PHONE_PALEBLUE_ICON = "/images/contactIcons/phone_paleblue.svg";
 
+  const contactInfo = [
+    {
+      iconDark: PHONE_PALEBLUE_ICON,
+      iconLight: PHONE_DARKBLUE_ICON,
+      text: "098 577 384",
+      alt: "phone",
+    },
+    {
+      iconDark: MAIL_PALEBLUE_ICON,
+      iconLight: MAIL_DARKBLUE_ICON,
+      text: "joaquin.codigo@gmail.com",
+      alt: "mail",
+    },
+    {
+      iconDark: LINKEDIN_PALEBLUE_ICON,
+      iconLight: LINKEDIN_DARKBLUE_ICON,
+      text: "linkedin.com/in/joaquincodigo",
+      alt: "linkedin",
+    },
+    {
+      iconDark: GITHUB_PALEBLUE_ICON,
+      iconLight: GITHUB_DARKBLUE_ICON,
+      text: "github.com/joaquincodigo",
+      alt: "github",
+    },
+  ];
+
   return (
     <div
       className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-auto text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
     >
-      <ul>
-        <li className="mb-3">
-          <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
-            src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
-            alt="phone"
-          />
-          <span className="align-middle">098 577 384</span>
-        </li>
-        <li className="mb-3">
-          <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
-            src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
-            alt="mail"
-          />
-          <span className="align-middle">joaquin.codigo@gmail.com</span>
-        </li>
-        <li className="mb-3">
-          <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
-            src={
-              theme === "dark" ? LINKEDIN_PALEBLUE_ICON : LINKEDIN_DARKBLUE_ICON
-            }
-            alt="linkedin"
-          />
-          <span className="align-middle">linkedin.com/in/joaquincodigo</span>
-        </li>
-        <li className="mb-3">
-          <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
-            src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
-            alt="github"
-          />
-          <span className="align-middle">github.com/joaquincodigo</span>
-        </li>
+      <ul className="flex flex-col space-y-2.5">
+        {contactInfo.map((info, index) => (
+          <li className="" key={index}>
+            <img
+              className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
+              src={theme === "dark" ? info.iconDark : info.iconLight}
+              alt={info.alt}
+            />
+            <span className="align-middle">{info.text}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );

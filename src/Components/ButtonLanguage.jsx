@@ -28,7 +28,10 @@ const ButtonLanguage = () => {
   }
 
   return (
-    <button className="ButtonLanguage me-2" onClick={toggleLanguage}>
+    <button
+      className="hover:bg-blue-20 dark:hover:bg-blue-70 rounded-full p-1.5 me-2"
+      onClick={toggleLanguage}
+    >
       <img src={currentIcon} alt="language icon" />
     </button>
   );
