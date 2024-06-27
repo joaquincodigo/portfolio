@@ -12,8 +12,8 @@ const Button = ({ text, icon, onClick }) => {
         className="Button md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0"
       >
         <div className="flex justify-center items-center">
-          <img className="me-3 w-8" src={icon} alt="Contact" />
-          <span className="text-white text-center font-semibold text-xl md:text-base">
+          <img className="me-3 w-6" src={icon} alt="Contact" />
+          <span className="text-white text-center font-semibold text-base md:text-sm">
             {text}
           </span>
         </div>
