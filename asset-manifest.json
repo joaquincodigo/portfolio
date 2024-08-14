@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e020986e.css",
-    "main.js": "/static/js/main.f0f10fc7.js",
-    "index.html": "/index.html",
-    "main.e020986e.css.map": "/static/css/main.e020986e.css.map",
-    "main.f0f10fc7.js.map": "/static/js/main.f0f10fc7.js.map"
+    "main.css": "https://joaquincodigo.github.io/portfolio/static/css/main.e020986e.css",
+    "main.js": "https://joaquincodigo.github.io/portfolio/static/js/main.f0f10fc7.js",
+    "index.html": "https://joaquincodigo.github.io/portfolio/index.html",
+    "main.e020986e.css.map": "https://joaquincodigo.github.io/portfolio/static/css/main.e020986e.css.map",
+    "main.f0f10fc7.js.map": "https://joaquincodigo.github.io/portfolio/static/js/main.f0f10fc7.js.map"
   },
   "entrypoints": [
     "static/css/main.e020986e.css",
