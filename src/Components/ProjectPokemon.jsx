@@ -7,7 +7,6 @@ import ProjectEntry from "./ProjectEntry";
 
 const ProjectPokemon = () => {
   const { language } = useContext(LanguageContext);
-  const { theme } = useContext(ThemeContext);
 
   const title = language === "en" ? "Pokémon Search" : "Búsqueda Pokémon";
 

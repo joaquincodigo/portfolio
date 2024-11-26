@@ -9,7 +9,7 @@ const Button = ({ text, icon, onClick }) => {
     <div className="w-full px-6 md:px-0">
       <button
         onClick={onClick}
-        className="Button md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0"
+        className="Button hover:bg-blue-70 dark:hover:bg-blue-80 md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0"
       >
         <div className="flex justify-center items-center">
           <img className="me-3 w-6" src={icon} alt="Contact" />
