@@ -17,11 +17,12 @@ const ProjectPokemon = () => {
       : "¡Explora y filtra entre los 151 Pokémon originales para encontrar tu favorito! Esta aplicación fue creada con cariño usando React, con la intención de evocar un sentimiento de nostalgia.";
 
   const image = "images/PokemonProjectPhoto.gif";
-  const link = "example.com";
+  const link = "https://joaquincodigo.github.io/pokemon-search/";
+  const tags = ["React", "Tailwind", "API"] 
 
   return (
     <div className="ProjectPokemon">
-      <ProjectEntry title={title} text={text} image={image} link={link} />
+      <ProjectEntry title={title} text={text} image={image} link={link} tags={tags} />
     </div>
   );
 };

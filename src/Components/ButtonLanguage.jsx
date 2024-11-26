@@ -6,10 +6,10 @@ const ButtonLanguage = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
 
-  const darkESIcon = "/images/ES Black Icon.svg";
-  const lightESIcon = "/images/ES White Icon.svg";
-  const darkUSIcon = "/images/US Black Icon.svg";
-  const lightUSIcon = "/images/US White Icon.svg";
+  const darkESIcon = "images/ES Black Icon.svg";
+  const lightESIcon = "images/ES White Icon.svg";
+  const darkUSIcon = "images/US Black Icon.svg";
+  const lightUSIcon = "images/US White Icon.svg";
 
   let currentIcon;
 

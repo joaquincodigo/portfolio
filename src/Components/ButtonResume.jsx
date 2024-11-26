@@ -4,9 +4,9 @@ import Button from "./Button";
 
 const ButtonResume = () => {
   const { language } = useContext(LanguageContext);
-  const resumeIcon = "/images/ResumeIconWhite.svg";
+  const resumeIcon = "images/ResumeIconWhite.svg";
   const text =
-    language === "en" ? "Download my CV (US)" : "Descarga mi CV (ES)";
+    language === "en" ? "Download my CV (EN)" : "Descarga mi CV (ES)";
 
   return (
     <div className="ResumeButton mb-9">

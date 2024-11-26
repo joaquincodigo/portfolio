@@ -7,14 +7,14 @@ const ContactInfo = ({ isContactInfoHidden }) => {
 
   const displayStatus = isContactInfoHidden ? "hidden" : "flex";
 
-  const GITHUB_DARKBLUE_ICON = "/images/contactIcons/github_darkblue.svg";
-  const GITHUB_PALEBLUE_ICON = "/images/contactIcons/github_paleblue.svg";
-  const LINKEDIN_DARKBLUE_ICON = "/images/contactIcons/linkedin_darkblue.svg";
-  const LINKEDIN_PALEBLUE_ICON = "/images/contactIcons/linkedin_paleblue.svg";
-  const MAIL_DARKBLUE_ICON = "/images/contactIcons/mail_dark_blue.svg";
-  const MAIL_PALEBLUE_ICON = "/images/contactIcons/mail_paleblue.svg";
-  const PHONE_DARKBLUE_ICON = "/images/contactIcons/phone_darkblue.svg";
-  const PHONE_PALEBLUE_ICON = "/images/contactIcons/phone_paleblue.svg";
+  const GITHUB_DARKBLUE_ICON = "images/contactIcons/github_darkblue.svg";
+  const GITHUB_PALEBLUE_ICON = "images/contactIcons/github_paleblue.svg";
+  const LINKEDIN_DARKBLUE_ICON = "images/contactIcons/linkedin_darkblue.svg";
+  const LINKEDIN_PALEBLUE_ICON = "images/contactIcons/linkedin_paleblue.svg";
+  const MAIL_DARKBLUE_ICON = "images/contactIcons/mail_dark_blue.svg";
+  const MAIL_PALEBLUE_ICON = "images/contactIcons/mail_paleblue.svg";
+  const PHONE_DARKBLUE_ICON = "images/contactIcons/phone_darkblue.svg";
+  const PHONE_PALEBLUE_ICON = "images/contactIcons/phone_paleblue.svg";
 
   return (
     <div

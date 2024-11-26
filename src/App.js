@@ -13,6 +13,7 @@ import ButtonTheme from "./Components/ButtonTheme";
 import ButtonResume from "./Components/ButtonResume";
 import ProjectJap from "./Components/ProjectJap";
 import ProjectPokemon from "./Components/ProjectPokemon";
+import ProjectTodo from "./Components/ProjectTodo";
 import TopBar from "./Components/TopBar";
 import ContactInfo from "./Components/ContactInfo";
 
@@ -60,6 +61,7 @@ function App() {
           <div className="flex flex-col md:flex-row md:flex-wrap md:space-x-4 justify-center">
             <ProjectJap />
             <ProjectPokemon />
+            <ProjectTodo />
           </div>
         </ThemeProvider>
       </LanguageProvider>

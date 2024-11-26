@@ -12,6 +12,9 @@ const ProjectJap = () => {
   const image = "images/JapProjectPhoto.gif";
   const link = "https://ripnephils.github.io/JoaquinOrtiz/";
   const title = language === "en" ? "JAP eComerce Site" : "JAP Sitio eComerce";
+
+  const tags = ["From scratch", "Vanilla JS", "Vanilla CSS", "API", "Bootstrap"] 
+
   const text =
     language === "en"
       ? "This project is part of my first year in Jóvenes a Programar. I designed and developed an e-commerce website inspired by MercadoLibre, where everything was implemented entirely from scratch."
@@ -19,7 +22,7 @@ const ProjectJap = () => {
 
   return (
     <div className="ProjectJap">
-      <ProjectEntry title={title} text={text} image={image} link={link} />
+      <ProjectEntry title={title} text={text} image={image} link={link} tags={tags} />
     </div>
   );
 };
