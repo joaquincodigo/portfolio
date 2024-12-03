@@ -9,7 +9,7 @@ const ProjectJap = () => {
   const { language } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
   const image = "images/JapProjectPhoto.gif";
-  const link = "https://joaquincodigo.github.io/portfolio/";
+  const link = "https://github.com/joaquincodigo/projectoecomercejap/";
   const title = language === "en" ? "JAP eComerce Site" : "JAP Sitio eComerce";
 
   const tags = ["From scratch", "Vanilla JS", "Vanilla CSS", "API", "Bootstrap"] 
