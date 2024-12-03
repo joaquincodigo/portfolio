@@ -8,9 +8,8 @@ import ProjectEntry from "./ProjectEntry";
 const ProjectJap = () => {
   const { language } = useContext(LanguageContext);
   const { theme } = useContext(ThemeContext);
-
   const image = "images/JapProjectPhoto.gif";
-  const link = "https://ripnephils.github.io/JoaquinOrtiz/";
+  const link = "https://joaquincodigo.github.io/portfolio/";
   const title = language === "en" ? "JAP eComerce Site" : "JAP Sitio eComerce";
 
   const tags = ["From scratch", "Vanilla JS", "Vanilla CSS", "API", "Bootstrap"] 
