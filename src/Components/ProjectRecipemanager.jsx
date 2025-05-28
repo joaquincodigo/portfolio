@@ -16,7 +16,7 @@ const ProjectRecipemanager = () => {
       : "Crea tus propias recetas y compártelas con el mundo. Dale \"me gusta\" y guarda tus recetas favoritas de otros usuarios. ¡A cocinar!";
 
   const image = "images/RecipemanagerPhoto.gif";
-  const link = "https://recipemanager-w4dh.vercel.app/create-recipe";
+  const link = "https://recipemanager-w4dh.vercel.app/home";
   const tags = ["NextJS", "SupaBase", "Authentification", "Vercel", "Back-end", "Tailwind"] 
 
   return (
