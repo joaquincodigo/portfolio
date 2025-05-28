@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1584695d.css",
-    "main.js": "/portfolio/static/js/main.fb0cfb64.js",
-    "index.html": "/portfolio/index.html",
-    "main.1584695d.css.map": "/portfolio/static/css/main.1584695d.css.map",
-    "main.fb0cfb64.js.map": "/portfolio/static/js/main.fb0cfb64.js.map"
+    "main.css": "https://joaquincodigo.github.io/portfolio/static/css/main.329b06c9.css",
+    "main.js": "https://joaquincodigo.github.io/portfolio/static/js/main.759fbe9e.js",
+    "index.html": "https://joaquincodigo.github.io/portfolio/index.html",
+    "main.329b06c9.css.map": "https://joaquincodigo.github.io/portfolio/static/css/main.329b06c9.css.map",
+    "main.759fbe9e.js.map": "https://joaquincodigo.github.io/portfolio/static/js/main.759fbe9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.1584695d.css",
-    "static/js/main.fb0cfb64.js"
+    "static/css/main.329b06c9.css",
+    "static/js/main.759fbe9e.js"
   ]
 }
