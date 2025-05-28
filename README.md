@@ -1,5 +1,9 @@
 My personal portfolio.
 
 To deploy to GitHub Pages:
-> npm install --save gh-pages (if not installed)
+
+If GitHub pages is not installed:
+> npm install --save gh-pages
+
+Finally:
 > npm run deploy
