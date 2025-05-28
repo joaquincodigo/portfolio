@@ -1,49 +1,19 @@
-import React, { useContext } from 'react';
-import ThemeContext from './ThemeContext';
+import React from "react";
 
 const TopBar = ({ children }) => {
-	const { theme } = useContext(ThemeContext);
+  return (
+    <nav className="TopBar py-1.5 shadow-sm bg-cool-gray-10 text-blue-90 dark:shadow-sm dark:shadow-blue-70 dark:bg-blue-90 dark:text-cool-gray-10 fixed top-0 left-0 w-full flex items-center justify-between px-3">
+      <div className="flex flex-row items-center">
+        <p className="font-bold text-lg rounded-full me-2">⬗ </p>
+        <p className="text-lg md:text-base">
+          joaquín
+          <span className="font-bold">.código</span>
+        </p>
+      </div>
 
-	return (
-		<nav
-			className="navbar fixed-top shadow-sm p-0"
-			style={{
-				backgroundColor: theme === 'dark' ? '#001141' : '#ffffff',
-			}}
-		>
-			<div
-				className="container-fluid d-flex align-items-center pt-2 pb-2 pt-lg-1 pb-lg-1"
-				style={{
-					boxShadow: theme === 'dark' ? '0px 0.9px 2px #d0e2ff' : '0px 0.2px 2px #001141'
-				}}
-			>
-				<p
-					className="navbar-brand p-0 m-0"
-					style={{ color: theme === 'dark' ? '#ffffff' : '#001141' }}
-				>
-					joaquín
-					<span className='ibm-plex-sans-semibold'>.código</span>
-				</p>
-				{children}
-			</div>
-		</nav>
-	);
+      <div className="">{children}</div>
+    </nav>
+  );
 };
 
 export default TopBar;
-
-
-
-// const styles = theme === 'dark' ?
-// 	// DARK THEME
-// 	{
-// 		backgroundColor: '#001141',
-// 		color: '#ffffff',
-// 		boxShadow: '0px 0.8px 4px #d0e2ff'
-// 	}
-// 	:
-// 	// LIGHT THEME
-// 	{
-// 		backgroundColor: '#ffffff',
-// 		color: '#001141'
-// 	};

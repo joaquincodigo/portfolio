@@ -1,42 +1,29 @@
-import React, { useContext } from 'react';
-import LanguageContext from './LanguageContext';
-import ThemeContext from './ThemeContext';
-import './PresentationText.css';
-
+import React, { useContext } from "react";
+import LanguageContext from "./LanguageContext";
+import ThemeContext from "./ThemeContext";
 
 const PresentationText = () => {
+  const { language } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext);
 
-	const { language } = useContext(LanguageContext);
-	const { theme } = useContext(ThemeContext);
+  const text =
+    language === "en"
+      ? "Explore my web projects demonstrating skills and expertise."
+      : "Explora mis proyectos web que muestran habilidades y experiencia.";
 
-	const text = language === 'en' ?
-		"Explore my web projects demonstrating skills and expertise."
-		:
-		"Explora mis proyectos web que muestran habilidades y experiencia."
+  return (
+    <div className="PresentationText mb-9 w-full">
+      <div className="">
+        <h1 className="text-3xl md:text-2xl font-bold text-center mt-5 mb-2 text-blue-90 dark:text-blue-10">
+          Portfolio
+        </h1>
+      </div>
 
-	return (
-		<div
-			className='PresentationText row'
-			style={{
-				color: theme === 'dark' ? '#ffffff' : '#001141'
-			}}
-		>
-			<div className="portfolio-heading row m-0 p-0">
-				<h1 className=' mt-1 mb-2 fs-1 fs-xl-5 imb-plex-sans-bold text-center'>Portfolio</h1>
-			</div>
-
-			<p className='text-center mb-4 fs-2 ibn-plex regular col-11 mx-auto'>
-				{text}
-			</p>
-
-		</div>
-	);
+      <p className="text-center text-2xl md:text-xl mx-6 text-blue-90 dark:text-white">
+        {text}
+      </p>
+    </div>
+  );
 };
 
 export default PresentationText;
-
-
-
-
-
-
