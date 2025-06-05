@@ -1,38 +1,25 @@
-import React from 'react';
-import { useContext } from 'react';
-import ThemeContext from './ThemeContext';
+import React from "react";
+import { useContext } from "react";
+import ThemeContext from "./ThemeContext";
 
+const Button = ({ text, icon, onClick }) => {
+  const { theme } = useContext(ThemeContext);
 
-const Button = ({ text, icon }) => {
-
-	const { theme } = useContext(ThemeContext)
-
-	return (
-		<div className='row'>
-			<button
-				className='btn btn-lg rounded-pill col-10 col-md-6 col-lg-3 col-xl-3 mx-auto mb-3'
-				style={{ backgroundColor: theme === 'light' ? '#001d6c' : '#0043ce' }}
-			>
-				<div className="container mx-auto d-flex align-items-center justify-content-center">
-
-					<img src={icon}
-						alt="Contact"
-						className='img-fluid me-3'
-						style={{ maxWidth: '10%', height: 'auto' }}
-					/>
-
-					<span
-						className='ibm-plex-sans-semibold me-3 fs-4'
-						style={{ color: theme === 'light' ? '#ffffff' : '#ffffff' }}
-					>
-						{text}
-					</span>
-
-				</div>
-			</button>
-		</div>
-	);
+  return (
+    <div className="w-full px-6 md:px-0">
+      <button
+        onClick={onClick}
+        className="Button hover:bg-blue-70 dark:hover:bg-blue-80 md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0"
+      >
+        <div className="flex justify-center items-center">
+          <img className="me-3 w-6" src={icon} alt="Contact" />
+          <span className="text-white text-center font-semibold text-base md:text-sm">
+            {text}
+          </span>
+        </div>
+      </button>
+    </div>
+  );
 };
 
 export default Button;
-

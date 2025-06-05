@@ -1,29 +1,29 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import LanguageContext from './LanguageContext';
-import ThemeContext from './ThemeContext';
+import LanguageContext from "./LanguageContext";
+import ThemeContext from "./ThemeContext";
 
-import ProjectEntry from './ProjectEntry'
-
+import ProjectEntry from "./ProjectEntry";
 
 const ProjectJap = () => {
+  const { language } = useContext(LanguageContext);
+  const { theme } = useContext(ThemeContext);
+  const image = "images/JapProjectPhoto.gif";
+  const link = "https://joaquincodigo.github.io/projectoecomercejap/";
+  const title = language === "en" ? "JAP eComerce Site" : "JAP Sitio eComerce";
 
-	const { language } = useContext(LanguageContext);
-	const { theme } = useContext(ThemeContext);
+  const tags = ["From scratch", "Vanilla JS", "Vanilla CSS", "API", "Bootstrap"] 
 
-	const title = language === 'en' ? "JAP eComerce Site" : "JAP Sitio eComerce"
-	const text = language === 'en' ?
-		"This project is part of my first year in Jóvenes a Programar. I designed and developed an e-commerce website inspired by MercadoLibre, using JavaScript, HTML, and CSS. Every section, CSS style, and logic were implemented entirely from scratch."
-		:
-		"Este proyecto forma parte de mi primer año en 'Jóvenes a Programar'. Diseñé y desarrollé un sitio de comercio inspirado en MercadoLibre, utilizando JavaScript, HTML y CSS puro. Cada sección, estilo CSS y lógica fueron implementados completamente desde cero."
-	const image = "images/JapProjectPhoto.bmp"
-	const link = "https://ripnephils.github.io/JoaquinOrtiz/"
+  const text =
+    language === "en"
+      ? "This project is part of my first year in Jóvenes a Programar. I designed and developed an e-commerce website inspired by MercadoLibre, where everything was implemented entirely from scratch."
+      : "Este proyecto forma parte de mi primer año en 'Jóvenes a Programar'. Diseñé y desarrollé un sitio de comercio inspirado en MercadoLibre, donde todo fue implementado completamente desde cero.";
 
-	return (
-		<div className='ProjectJap'>
-			<ProjectEntry title={title} text={text} image={image} link={link} />
-		</div>
-	);
+  return (
+    <div className="ProjectJap">
+      <ProjectEntry title={title} text={text} image={image} link={link} tags={tags} />
+    </div>
+  );
 };
 
 export default ProjectJap;

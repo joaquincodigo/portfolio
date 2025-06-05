@@ -1,46 +1,37 @@
-import React, { useContext } from 'react';
-import ThemeContext from './ThemeContext';
-import LanguageContext from './LanguageContext';
+import React, { useContext } from "react";
 
-const ProjectEntry = ({ title, text, image, link }) => {
-	const dummyImage = '/images/dummyProjectImage.png';
-	const { theme } = useContext(ThemeContext);
-	const { language } = useContext(LanguageContext);
+const ProjectEntry = ({ title, text, image, link, tags }) => {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      <div className="ProjectEntry md:min-h-[527.95px] mb-6 p-6 rounded-3xl shadow-md shadow-blue-30 dark:shadow-blue-90 dark:border dark:border-blue-70 text-blue-100 dark:text-blue-10 bg-white dark:bg-blue-90 max-w-[463px] mx-auto hover:ring-1 transition-all duration-200 ring-blue-30 dark:ring-blue-50 hover:shadow-blue-40 dark:hover:shadow-blue-70 ">
+        {/* TITLE */}
+        <h3 className="text-xl font-bold mb-6">{title}</h3>
 
-	const buttonText = language === 'en' ? 'See' : 'Ver'
+        {/* TEXT */}
+        {/* Min height of 4 lines with 1.25 of separation */}
+        <p className="text-base mb-6 min-h-24 ">{text}</p> 
 
-	return (
-		<div
-			className='ProjectEntry mb-4 mx-auto p-3 col-11 rounded-4'
-			style={{
-				backgroundColor: theme === 'light' ? '#ffffff' : '#001141',
-				boxShadow: '0px 0px 5px 2px rgba(0, 17, 65, 0.08)'
-			}}
-		>
-			{/* TITLE */}
-			< h3 className='mb-3 fs-2' > {title}</h3 >
+        {/* IMAGE */}
+        <img
+          className="rounded-md mb-6 w-full h-64 object-cover"
+          src={image}
+          alt="Project Screenshot"
+        />
 
-			{/* DESCRIPTION */}
-			< p className='fs-4 mb-3' > {text}</p >
-
-			{/* IMAGE */}
-			< img className="mb-2 col-12 rounded" src={image} alt="Project Preview" />
-
-			{/* BUTTON */}
-			<a href={link} target="_blank" rel="noopener noreferrer">
-				<button
-					className='btn rounded-pill col-5 offset-7 mt-3 mb-2 fs-4 ibm-plex-sans-semibold'
-					style={{
-						backgroundColor: theme === 'light' ? '#001d6c' : '#9ef0f0',
-						color: theme === 'light' ? '#ffffff' : '#ffffff',
-					}}
-				>
-					{buttonText}
-				</button>
-			</a>
-
-		</div >
-	);
+        {/* TAGS */}
+        <div className="items-start flex flex-wrap w-100">
+          {tags.map((tag, index) => (
+            <span
+              className="bg-blue-20 shadow-sm shadow-blue-50 dark:bg-blue-70 text-sm px-1 me-2 mb-2 whitespace-nowrap rounded rounded-ml"
+              key={index}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </a>
+  );
 };
 
 export default ProjectEntry;
