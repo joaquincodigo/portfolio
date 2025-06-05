@@ -7,11 +7,17 @@ const ButtonResume = () => {
   const resumeIcon = "images/ResumeIconWhite.svg";
   const text =
     language === "en" ? "Download my CV (EN)" : "Descarga mi CV (ES)";
+  const resumeLink =
+    language === "en"
+      ? "/cv/Joaquin Ortiz CV - English.pdf"
+      : "/cv/Joaquin Ortiz CV - Spanish.pdf";
 
   return (
-    <div className="ResumeButton mb-9">
-      <Button text={text} icon={resumeIcon} />
-    </div>
+    <a href={resumeLink} download>
+      <div className="ResumeButton mb-9">
+        <Button text={text} icon={resumeIcon} />
+      </div>
+    </a>
   );
 };
 

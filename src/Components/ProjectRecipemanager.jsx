@@ -17,7 +17,7 @@ const ProjectRecipemanager = () => {
 
   const image = "images/RecipemanagerPhoto.gif";
   const link = "https://recipemanager-w4dh.vercel.app/home";
-  const tags = ["NextJS", "SupaBase", "Authentification", "Vercel", "Back-end", "Tailwind"] 
+  const tags = ["NextJS", "SupaBase", "Auth", "Responsive", "Vercel", "Back-end", "Tailwind"] 
 
   return (
     <div className="ProjectPokemon">
