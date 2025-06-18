@@ -28,7 +28,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
-          <span className="align-middle me-1 [min-width:387px]:text-sm">098 577 384</span>
+          <span className="align-middle me-1">098 577 384</span>
           <span className="relative top-[3px] align-middle ">
             <CopyButton stringToCopy={"098 577 384"} />
           </span>
@@ -39,7 +39,12 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
             alt="mail"
           />
-          <span className="align-middle me-1 [min-width:387px]:text-sm">joaquin.codigo@gmail.com</span>
+          <span className="align-middle me-1 max-[385px]:hidden">
+            joaquin.codigo@gmail.com
+          </span>
+          <span className="align-middle me-1 min-[385px]:hidden">
+            joaquin.codigo@g...
+          </span>
           <span className="relative top-[3px] align-middle">
             <CopyButton stringToCopy={"joaquin.codigo@gmail.com"} />
           </span>
@@ -52,8 +57,13 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             }
             alt="linkedin"
           />
-          <span className="align-middle me-1 [min-width:387px]:text-sm">
-            linkedin.com/in/joaquincodigo
+          <span className="align-middle me-1">
+            <span className="align-middle me-1 max-[385px]:hidden">
+              linkedin.com/in/joaquincodigo
+            </span>
+            <span className="align-middle me-1 min-[385px]:hidden">
+              linkedin.com/in/joa...
+            </span>
           </span>
           <span className="relative top-[3px] align-middle">
             <CopyButton stringToCopy={"linkedin.com/in/joaquincodigo"} />
@@ -61,11 +71,16 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-4 [min-width:387px]:w-6 me-3 inline-block [min-width:387px]:text-sm"
+            className="w-4 [min-width:387px]:w-6 me-3 inline-block"
             src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
             alt="github"
           />
-          <span className="align-middle me-1">github.com/joaquincodigo</span>
+          <span className="align-middle me-1 max-[385px]:hidden">
+            github.com/joaquincodigo
+          </span>
+          <span className="align-middle me-1 min-[385px]:hidden">
+            github.com/joa...
+          </span>
           <span className=" relative top-[3px] align-middle">
             <CopyButton stringToCopy={"github.com/joaquincodigo"} />
           </span>
@@ -76,4 +91,3 @@ const ContactInfo = ({ isContactInfoHidden }) => {
 };
 
 export default ContactInfo;
- 
