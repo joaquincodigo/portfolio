@@ -11,10 +11,11 @@ const CopyButton = ({ stringToCopy }) => {
 
   return (
     <button
-      className="hover:bg-blue-10 p-[1px] rounded-md text-blue-80"
+      className="[hover:hover]:hover:bg-blue-10 p-[1px] rounded-md text-blue-90"
       onClick={handleClick}
     >
       <svg
+      className="w-[1.2vw]"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

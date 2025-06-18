@@ -10,7 +10,7 @@ const ButtonTheme = () => {
 
   return (
     <button
-      className="hover:bg-blue-20 dark:hover:bg-blue-70 rounded-full p-1.5"
+      className="[hover:hover]:hover:bg-blue-20 dark:hover:bg-blue-70 rounded-full p-1.5"
       onClick={toggleTheme}
     >
       <img src={currentIcon} alt="Theme Icon" />

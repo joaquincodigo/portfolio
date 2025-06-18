@@ -46,7 +46,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-4 [min-width:387px]:w-6 me-3 inline-block"
+            className="w-[1.2vw] me-3 inline-block"
             src={
               theme === "dark" ? LINKEDIN_PALEBLUE_ICON : LINKEDIN_DARKBLUE_ICON
             }
@@ -66,7 +66,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             alt="github"
           />
           <span className="align-middle me-1">github.com/joaquincodigo</span>
-          <span className="relative top-[3px] align-middle">
+          <span className=" relative top-[3px] align-middle">
             <CopyButton stringToCopy={"github.com/joaquincodigo"} />
           </span>
         </li>
@@ -76,3 +76,4 @@ const ContactInfo = ({ isContactInfoHidden }) => {
 };
 
 export default ContactInfo;
+ 
