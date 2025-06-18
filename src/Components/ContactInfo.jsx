@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import ThemeContext from "./ThemeContext";
+import CopyButton from "./CopyButton";
 
 const ContactInfo = ({ isContactInfoHidden }) => {
   const { theme } = useContext(ThemeContext);
@@ -27,7 +28,10 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
-          <span className="align-middle">098 577 384</span>
+          <span className="align-middle me-1">098 577 384</span>
+          <span className="relative top-[3px] align-middle">
+            <CopyButton stringToCopy={"098 577 384"} />
+          </span>
         </li>
         <li>
           <img
@@ -35,12 +39,10 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
             alt="mail"
           />
-          <a
-            className="align-middle hover:underline"
-            href="mailto:joaquin.codigo@gmail.com"
-          >
-            joaquin.codigo@gmail.com
-          </a>
+          <span className="align-middle me-1">joaquin.codigo@gmail.com</span>
+          <span className="relative top-[3px] align-middle">
+            <CopyButton stringToCopy={"joaquin.codigo@gmail.com"} />
+          </span>
         </li>
         <li>
           <img
@@ -50,14 +52,12 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             }
             alt="linkedin"
           />
-          <a
-            href="http://www.linkedin.com/in/joaquincodigo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="align-middle hover:underline"
-          >
+          <span className="align-middle me-1">
             linkedin.com/in/joaquincodigo
-          </a>
+          </span>
+          <span className="relative top-[3px] align-middle">
+            <CopyButton stringToCopy={"linkedin.com/in/joaquincodigo"} />
+          </span>
         </li>
         <li>
           <img
@@ -65,14 +65,10 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
             alt="github"
           />
-          <a
-            href="http://www.github.com/joaquincodigo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="align-middle hover:underline"
-          >
-            github.com/joaquincodigo
-          </a>
+          <span className="align-middle me-1">github.com/joaquincodigo</span>
+          <span className="relative top-[3px] align-middle">
+            <CopyButton stringToCopy={"github.com/joaquincodigo"} />
+          </span>
         </li>
       </ul>
     </div>
