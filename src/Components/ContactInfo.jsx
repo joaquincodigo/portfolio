@@ -24,7 +24,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
       <ul className="flex flex-col space-y-2.5">
         <li>
           <img
-            className="w-6 align-middle me-3 inline-block"
+            className="w-4 [min-width:387px]:w-6 align-middle me-3 inline-block"
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
@@ -35,7 +35,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 inline-block"
+            className="w-4 [min-width:387px]:w-6 me-3 inline-block"
             src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
             alt="mail"
           />
@@ -46,7 +46,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 inline-block"
+            className="w-4 [min-width:387px]:w-6 me-3 inline-block"
             src={
               theme === "dark" ? LINKEDIN_PALEBLUE_ICON : LINKEDIN_DARKBLUE_ICON
             }
@@ -61,7 +61,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 inline-block"
+            className="w-4 [min-width:387px]:w-6 me-3 inline-block"
             src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
             alt="github"
           />
