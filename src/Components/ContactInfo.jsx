@@ -21,7 +21,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
       className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-auto text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
     >
       <ul className="flex flex-col space-y-2.5">
-        <li className="bg-red-500">
+        <li>
           <img
             className="w-6 align-middle me-3 inline-block"
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
