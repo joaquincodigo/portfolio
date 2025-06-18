@@ -93,7 +93,7 @@ module.exports = {
       },
 
       animation: {
-        shine: "shine 1.4s ease-in-out forwards",
+        shine: "shine 1.9s ease-in-out forwards",
       },
 
     },
