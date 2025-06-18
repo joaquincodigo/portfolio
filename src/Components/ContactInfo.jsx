@@ -21,9 +21,9 @@ const ContactInfo = ({ isContactInfoHidden }) => {
       className={`ContactInfo ${displayStatus} rounded-xl mb-6 py-3 px-3 mx-auto text-xl bg-white dark:bg-blue-90 text-blue-100 dark:text-blue-10`}
     >
       <ul className="flex flex-col space-y-2.5">
-        <li>
+        <li className="bg-red-500">
           <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
+            className="w-6 align-middle me-3 inline-block"
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
@@ -31,7 +31,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
+            className="w-6 align-middle me-3 inline-block"
             src={theme === "dark" ? MAIL_PALEBLUE_ICON : MAIL_DARKBLUE_ICON}
             alt="mail"
           />
@@ -44,7 +44,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
+            className="w-6 align-middle me-3 inline-block"
             src={
               theme === "dark" ? LINKEDIN_PALEBLUE_ICON : LINKEDIN_DARKBLUE_ICON
             }
@@ -61,7 +61,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
         </li>
         <li>
           <img
-            className="w-6 align-middle me-3 hidden min-[402px]:inline-block"
+            className="w-6 align-middle me-3 inline-block"
             src={theme === "dark" ? GITHUB_PALEBLUE_ICON : GITHUB_DARKBLUE_ICON}
             alt="github"
           />
