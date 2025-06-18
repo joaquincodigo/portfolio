@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         "ibm-plex-sans": ['"IBM Plex Sans"', "sans-serif"],
       },
+
       colors: {
         blue: {
           100: "#001141",
@@ -37,6 +38,64 @@ module.exports = {
         black: "#000000",
         white: "#ffffff",
       },
+
+      keyframes: {
+        shine: {
+          "0%": {
+            backgroundImage:
+              "linear-gradient(135deg, rgba(255,255,255,0.6), transparent, transparent)",
+          },
+          "9%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, rgba(255,255,255,0.6), transparent)",
+          },
+          "18%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "27%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "36%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "45%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "54%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "63%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "72%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "81%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "90%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, rgba(255,255,255,0.6))",
+          },
+          "100%": {
+            backgroundImage:
+              "linear-gradient(135deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent)",
+          },
+        },
+      },
+
+      animation: {
+        shine: "shine 1.4s ease-in-out forwards",
+      },
+
     },
   },
   plugins: [],

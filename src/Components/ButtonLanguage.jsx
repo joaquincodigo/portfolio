@@ -30,7 +30,7 @@ const ButtonLanguage = () => {
   return (
     <button
       onTouchEnd={(e) => e.currentTarget.blur()}
-      className="md:hover:bg-blue-30 active:bg-blue-30 dark:md:hover:bg-blue-70  dark:active:bg-blue-70 rounded-full p-1.5 me-2"
+      className="md:hover:bg-blue-30 active:bg-blue-30 dark:md:hover:bg-blue-70  dark:active:bg-blue-70 rounded-full p-1.5 me-2 animate-shine transition-all"
       onClick={toggleLanguage}
     >
       <img src={currentIcon} alt="language icon" />
