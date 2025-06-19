@@ -17,7 +17,7 @@ const CopyToast = () => {
         px-4 py-2 rounded-full transition-all duration-300 transform
         ${
           theme === "dark"
-            ? "bg-blue-60 text-white shadow-sm border-blue-50 border"
+            ? "bg-blue-70 text-white shadow-md"
             : "bg-blue-10 text-blue-90 border shadow-md shadow-blue-80/50"
         }
         ${
