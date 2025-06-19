@@ -10,7 +10,7 @@ const Button = ({ text, icon, onClick }) => {
       <button
         onTouchEnd={(e) => e.currentTarget.blur()}
         onClick={onClick}
-        className="Button active:bg-blue-70 md:hover:bg-blue-70 dark:active:bg-blue-80 dark:md:hover:bg-blue-80 md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0 h-14"
+        className="Button active:bg-blue-70 md:hover:bg-blue-70 dark:active:bg-blue-80 dark:md:hover:bg-blue-80 md:max-w-52 bg-blue-90 dark:bg-blue-70 rounded-full block mx-auto py-1.5 mb-3 w-full max-w-[344px] sm:w-[344px] md:mx-0 h-14 md:h-12"
       >
         <div className="flex justify-center items-center">
           <img className="me-3 w-6" src={icon} alt="Contact" />
