@@ -13,8 +13,8 @@ const CopyToast = () => {
 
   return (
     <div
-      className={`h-14 flex items-center fixed bottom-4 left-1/2 -translate-x-1/2 z-50
-        px-4 py-2 rounded-full transition-all duration-300 transform
+      className={`min-h-14 w-100vh flex items-center fixed bottom-4 left-1/2 -translate-x-1/2 z-50
+        px-8 py-4 md:px-4 md:py-2 rounded-full transition-all duration-300 transform
         ${
           theme === "dark"
             ? "bg-blue-70 text-white shadow-md"
