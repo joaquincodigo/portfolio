@@ -13,10 +13,11 @@ const CopyButton = ({ stringToCopy }) => {
     });
   };
 
+  const color = theme === "dark" ? "text-white" : "text-blue-90";
 
   return (
     <button
-      className="[hover:hover]:hover:bg-blue-10 p-[1px] rounded-md text-blue-90"
+      className={`md:hover:bg-blue-10 active:bg-blue-10 dark:md:hover:bg-blue-80 dark:active:bg-blue-80 p-[1px] rounded-md ${color}`}
       onClick={handleClick}
     >
       <svg
