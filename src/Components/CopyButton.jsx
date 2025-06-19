@@ -1,13 +1,18 @@
 import React from "react";
 import { useContext } from "react";
 import ThemeContext from "./ThemeContext";
+import { useToast } from "./ToastContext";
 
 const CopyButton = ({ stringToCopy }) => {
   const { theme } = useContext(ThemeContext);
+  const { showToast } = useToast();
 
   const handleClick = () => {
-    // todo
+    navigator.clipboard.writeText(stringToCopy).then(() => {
+      showToast(stringToCopy);
+    });
   };
+
 
   return (
     <button
@@ -15,7 +20,7 @@ const CopyButton = ({ stringToCopy }) => {
       onClick={handleClick}
     >
       <svg
-      className="w-[1.2vw]"
+        className="w-[1.2vw]"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"

@@ -28,9 +28,9 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             src={theme === "dark" ? PHONE_PALEBLUE_ICON : PHONE_DARKBLUE_ICON}
             alt="phone"
           />
-          <span className="align-middle me-1">098 577 384</span>
+          <span className="align-middle me-1">(+598) 98 577 384</span>
           <span className="relative top-[3px] align-middle ">
-            <CopyButton stringToCopy={"098 577 384"} />
+            <CopyButton stringToCopy={"(+598) 98 577 384"} />
           </span>
         </li>
         <li>
@@ -43,7 +43,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             joaquin.codigo@gmail.com
           </span>
           <span className="align-middle me-1 min-[385px]:hidden">
-            joaquin.codigo@g...
+            joaquin.codigo@gmai...
           </span>
           <span className="relative top-[3px] align-middle">
             <CopyButton stringToCopy={"joaquin.codigo@gmail.com"} />
@@ -79,7 +79,7 @@ const ContactInfo = ({ isContactInfoHidden }) => {
             github.com/joaquincodigo
           </span>
           <span className="align-middle me-1 min-[385px]:hidden">
-            github.com/joa...
+            github.com/joaquinc...
           </span>
           <span className=" relative top-[3px] align-middle">
             <CopyButton stringToCopy={"github.com/joaquincodigo"} />
