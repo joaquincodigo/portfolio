@@ -8,8 +8,8 @@ const PresentationText = () => {
 
   const presentationTitle =
     language === "en"
-      ? "Hello! This is my porfolio"
-      : "¡Hola! este es mi porfolio";
+      ? "Hello! This is my portfolio"
+      : "¡Hola! este es mi portfolio";
 
   const presentationText =
     language === "en"
