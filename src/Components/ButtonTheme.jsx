@@ -12,6 +12,7 @@ const ButtonTheme = () => {
     <button
       onTouchEnd={(e) => e.currentTarget.blur()}
       className="active:bg-blue-30 md:hover:bg-blue-30 dark:md:hover:bg-blue-70 dark:active:bg-blue-70 rounded-full p-1.5 animate-shine transition-all"
+      style={{ animationDelay: "1.5s" }}
       onClick={toggleTheme}
     >
       <img src={currentIcon} alt="Theme Icon" />
