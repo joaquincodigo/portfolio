@@ -1,6 +1,15 @@
 import React, { useContext } from "react";
+import useIsMobile from "../hooks/useIsMobile";
 
-const ProjectEntry = ({ title, text, image, link, tags }) => {
+const ProjectEntry = ({ title, text, image, link, tags, cropOnMobile=false }) => {
+  const isMobile = useIsMobile(); // Very narrow mobile (490 or less px)
+
+  let objectFit;
+  if (cropOnMobile) {
+    objectFit = isMobile ? "object-contain" : "object-cover";
+  } else {
+    objectFit = "object-cover";
+  }
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div className="ProjectEntry md:min-h-[527.95px] mb-6 p-6 rounded-3xl shadow-md shadow-blue-30 dark:shadow-blue-90 dark:border dark:border-blue-70 text-blue-100 dark:text-blue-10 bg-white dark:bg-blue-90 max-w-[463px] mx-auto hover:ring-1 transition-all duration-200 ring-blue-30 dark:ring-blue-50       active md:hover:shadow-blue-40 dark:md:hover:shadow-blue-70 ">
@@ -9,11 +18,11 @@ const ProjectEntry = ({ title, text, image, link, tags }) => {
 
         {/* TEXT */}
         {/* Min height of 4 lines with 1.25 of separation */}
-        <p className="text-base mb-6 min-h-24 ">{text}</p> 
+        <p className="text-base mb-6 min-h-24 ">{text}</p>
 
         {/* IMAGE */}
         <img
-          className="rounded-md mb-6 w-full h-64 object-cover"
+          className={`rounded-md mb-6 w-full h-64 ${objectFit}`}
           src={image}
           alt="Project Screenshot"
         />

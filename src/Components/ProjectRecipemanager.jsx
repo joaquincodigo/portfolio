@@ -42,6 +42,7 @@ const ProjectRecipemanager = () => {
         image={image}
         link={link}
         tags={tags}
+        cropOnMobile={true}
       />
     </div>
   );
