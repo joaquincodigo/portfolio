@@ -17,8 +17,11 @@ const ProjectRecipemanager = () => {
       : 'Crea tus propias recetas y compártelas con el mundo. Dale "me gusta" y guarda tus recetas favoritas de otros usuarios. ¡A cocinar!';
 
   const image = isMobile
-    ? "images/RecipemanagerPhotoSquare.png"
-    : "images/RecipeanagerPhoto.gif";
+    ? "images/RecipeManagerPhotoSquare.png"
+    : "images/RecipemanagerPhoto.gif";
+
+
+
 
   const link = "https://recipemanager-w4dh.vercel.app/home";
   const tags = [
