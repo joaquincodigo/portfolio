@@ -16,6 +16,7 @@ import ProjectJap from "./Components/ProjectJap";
 import ProjectPokemon from "./Components/ProjectPokemon";
 import ProjectTodo from "./Components/ProjectTodo";
 import ProjectRecipemanager from "./Components/ProjectRecipemanager";
+import ProjectResponsive from "./Components/ProjectResponsive";
 import TopBar from "./Components/TopBar";
 import ContactInfo from "./Components/ContactInfo";
 import CopyToast from "./Components/CopyToast";
@@ -63,6 +64,7 @@ function App() {
             {/* --------------------------- */}
 
             <div className="flex flex-col md:flex-row md:flex-wrap md:space-x-4 justify-center">
+              <ProjectResponsive />
               <ProjectRecipemanager />
               <ProjectJap />
               <ProjectPokemon />
