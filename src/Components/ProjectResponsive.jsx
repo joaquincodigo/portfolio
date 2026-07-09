@@ -20,7 +20,6 @@ const ProjectResponsive = () => {
     ? "images/ResponsiveProjectPhotoSquare.gif"
     : "images/ResponsiveProjectPhoto.gif";
 
-
   const link = "https://responsive-web-design-lac.vercel.app/";
   const tags = [
     "Responsive",
