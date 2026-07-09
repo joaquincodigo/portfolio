@@ -1,22 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import LanguageContext from './LanguageContext';
+import LanguageContext from "./LanguageContext";
 
-import Button from './Button'
+import Button from "./Button";
 
+const ButtonContact = ({ onClick }) => {
+  const { language } = useContext(LanguageContext);
 
-const ButtonContact = () => {
+  const text = language === "en" ? "Contact Me" : "Contáctame";
+  const contactIcon = "images/ContactIconWhite.svg";
 
-	const { language } = useContext(LanguageContext);
-
-	const text = language === 'en' ? "Contact Me" : "Contáctame"
-	const contactIcon = '/images/ContactIconWhite.svg'
-
-	return (
-		<div className='ButtonContact mb-2'>
-			<Button className="btn-light" text={text} icon={contactIcon} />
-		</div>
-	);
+  return (
+    <div className="Button">
+      <Button onClick={onClick} text={text} icon={contactIcon} />
+    </div>
+  );
 };
 
 export default ButtonContact;
